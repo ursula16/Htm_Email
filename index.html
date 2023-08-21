@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body{
+            background-color:white ;
+            font-family:'Segoe UI', sans-serif;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2%;
+            color: #565859;
+        }
+        #container{
+            /*margin: 0 auto;*/
+            background: #ffffff;
+            flex-direction: row;
+        }
+        h2{
+            letter-spacing: 1%;
+            padding-left: 2%;
+            font-weight: 700;
+        }
+        p{
+            padding: 2%;
+            text-align: justify;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .line{
+           clear: both;
+           margin: 4% auto;
+           width: 98%; 
+           height: 2px;
+           background-color: #E3E9E9;
+        }
+        header{
+            width: 20%;
+        
+        }
+        form {
+    width: 763px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+        }   
+        /*.visually-hidden {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            }*/
+        #logo{
+            float: left;
+            margin: 3% 0 0 5%;
+            max-width: 220px;
+            
+        }
+        #callout{
+            float: right;
+            margin: 3% 3% 2% 0;
+            height: auto;
+            overflow: hidden;
+            align-items: flex-start;
+
+            
+            
+        }
+        .social{
+            list-style-type: none;
+            margin-top: 4%;
+            padding: 0;
+            /*float: right;*/
+            flex-direction: row;
+            display: flex;
+            margin-left: 10%;
+            
+
+           
+        }
+        .social li{
+            display: inline;
+        }
+        #wraplog{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex: 1;
+            
+            
+            
+        }
+        .banner{
+            margin-bottom: 4%;
+            margin-top: 0%;
+        }
+        .btn{
+            float: right;
+            border-radius: 8px;
+            color: white;
+            font-size: 17px;
+            background: #175e85;
+            padding: 8px;
+            text-decoration: none;
+        }
+        .button-holder{
+            float: right;
+            margin: 0 2% 4% 0;
+        }
+        .btn:hover{
+            background: #4EC0EB;
+            text-decoration: none;
+        }
+        .contact{
+            text-align: center;
+            margin-bottom: 4%;
+
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Email</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="wraplog">
+                <div id="logo">
+                    <img src="images/pic6.png" alt="Logo"> 
+                </div>
+                <!--List of social media apps-->
+                    <div id="callout">
+                        <ul class="social">
+                        <li><a href="https://facebook.com" target="_blank"><img src="images/fbook.png" alt="Facebook"></a></li>
+                        <li><a href="https://google.com" target="_blank"><img src="images/goog.png" alt="Google"></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <div class="banner">
+            <!-- Visually hidden prompt for screen readers -->
+    <div class="visually-hidden">
+        <form action="/submit" method="post">
+           <h2> <p>Welcome to Mabs Incorporation</p></h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+        </form>
+    </div>
+            <img src="images/pic11.jpg" alt="Nature">
+
+        </div>
+    
+    </div>
+        <h2>Mabs Designs</h2>
+        <p>Lorem ipsum dolor sit amet,
+           consectetur adipiscing elit, 
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="button-holder">
+             <a href="#" class="btn">Learn More</a>
+         </div>
+         <div class="line"></div>
+         <p class="contact">Mabs Incorporation<br> +233243732610<br>KNUST-Kumasi<br>contact@mabsincorpoaration.com</nr></p>
+         
+    </div>
+</body>
+</html>
